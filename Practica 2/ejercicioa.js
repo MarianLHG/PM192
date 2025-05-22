@@ -5,7 +5,7 @@ const persona={
         ciudad: "Querétaro",
         pais: "México"
     }
-};
+}; 
 
 //destructuración  
 const {nombre, edad, direccion:{ciudad, pais}} = persona;
