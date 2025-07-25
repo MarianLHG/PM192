@@ -12,7 +12,7 @@ export default function App() {
 
   const guardarDatos = () => {
     if (nombre.trim()===''&& correo.trim()==='') {
-      setCMensajeError('Faltan el nombre y correo');
+      setMensajeError('Faltan el nombre y correo');
       setErrorVisible(true);
     } else if(nombre.trim()===''){
       setMensajeError('Falta el nombre');
@@ -30,7 +30,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={style.title}>Formulario en Modal</Text>
+      <Text style={styles.title}>Formulario en Modal</Text>
       <Button title="Abrir Formulario" onPress={() => setModalVisible(true)} />
       
       <Modal
@@ -91,7 +91,7 @@ export default function App() {
           <View style={styles.errorBox}>
             <Text style={styles.errorTitle}>Error</Text>
             <Text style={styles.errorMensaje}>{mensajeError}</Text>
-            <Button tittle="OK" onPress={() => setErrorVisible(false)} />
+            <Button title="OK" onPress={() => setErrorVisible(false)} />
           </View>
         </View>
       </Modal>
